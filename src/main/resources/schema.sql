@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS parser.AccessLog (date datetime(3) not null, ip varchar(255), request varchar(255), status integer not null, userAgent varchar(255), primary key (date)) engine=InnoDB;
+CREATE TABLE IF NOT EXISTS parser.BlockedIp (ip varchar(15) not null, comment varchar(255), date datetime, primary key (ip)) engine=InnoDB;
